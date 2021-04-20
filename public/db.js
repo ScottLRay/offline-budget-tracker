@@ -3,8 +3,7 @@ let db;
 let budgetVersion;
 
 // Create a new db request for a "budget" database.
-//budgetdb in the name of the database
-//use this version or v-21
+//budgetdb in the name of the database || use this version or v-21
 const request = indexedDB.open('BudgetDB', budgetVersion || 21);
 
 request.onupgradeneeded = function (e) {
